@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>堂奧圖書 - 英語教材專家</title>
+    <title>Cambridge Young Learners English Tests:Starters(Qrcode版)_TA0045 YLE - Cambridge YLE | 堂奧圖書</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,12 +17,7 @@
             font-family: 'Inter', sans-serif;
             color: #333;
             line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1rem;
+            background: #f9f9f9;
         }
 
         /* Header */
@@ -40,6 +34,10 @@
             align-items: center;
             justify-content: space-between;
             padding: 1rem 0;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         .logo {
@@ -95,6 +93,7 @@
             border-radius: 2rem;
             padding: 0.5rem 1rem;
             width: 250px;
+            border: 2px dashed #ddd;
         }
 
         .search-box input {
@@ -110,12 +109,15 @@
             border: none;
             cursor: pointer;
             color: #999;
+            font-size: 1rem;
         }
 
         .cart-icon {
             position: relative;
             cursor: pointer;
             font-size: 1.2rem;
+            text-decoration: none;
+            color: #333;
         }
 
         .cart-badge {
@@ -139,6 +141,14 @@
             padding: 0.5rem 0;
         }
 
+        .nav-secondary-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            gap: 0;
+        }
+
         .nav-secondary a {
             color: white;
             text-decoration: none;
@@ -152,215 +162,258 @@
             background: rgba(0,0,0,0.1);
         }
 
-        /* Hero Banner */
-        .hero {
-            height: 400px;
-            background: linear-gradient(135deg, #f5a623 0%, #E84A2B 100%);
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop') center/cover;
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 600px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            font-family: 'Noto Serif TC', serif;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.95;
-        }
-
-        .hero-btn {
-            background: white;
-            color: #E84A2B;
+        .menu-toggle {
+            display: none;
+            background: none;
             border: none;
-            padding: 0.75rem 2rem;
-            border-radius: 2rem;
-            font-weight: 600;
+            font-size: 1.5rem;
             cursor: pointer;
-            transition: transform 0.3s;
         }
 
-        .hero-btn:hover {
-            transform: scale(1.05);
-        }
-
-        /* Section */
-        section {
-            padding: 3rem 0;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            font-family: 'Noto Serif TC', serif;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .section-label {
-            text-align: center;
-            color: #E84A2B;
+        /* Breadcrumb */
+        .breadcrumb {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
             font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.1rem;
-            margin-bottom: 0.5rem;
+            color: #666;
         }
 
-        /* Category Section */
-        .category-grid {
+        .breadcrumb a {
+            color: #E84A2B;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .main-container {
+            max-width: 1400px;
+            margin: 2rem auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .category-card {
-            text-align: center;
-            padding: 1.5rem;
-            border-radius: 1rem;
-            background: #FFF3F0;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 2px solid #FFD5CC;
-        }
-
-        .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(232, 74, 43, 0.2);
-        }
-
-        .category-icon {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .category-card p {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #333;
-        }
-
-        /* Books Grid */
-        .books-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .book-card {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 0 1rem;
             background: white;
-            border: 1px solid #eee;
-            border-radius: 0.75rem;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 0.5rem;
+            padding: 2rem;
         }
 
-        .book-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        /* Product image */
+        .product-image-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
 
-        .book-cover {
+        .product-main-image {
             width: 100%;
             aspect-ratio: 3/4;
-            background: #f5f5f5;
+            background: linear-gradient(135deg, #f5a623 0%, #E84A2B 100%);
+            border-radius: 0.5rem;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
             position: relative;
         }
 
-        .book-cover img {
+        .product-main-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .book-badge {
+        .mp3-badge {
             position: absolute;
-            top: 0.5rem;
-            left: 0.5rem;
-            background: #E84A2B;
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.75rem;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
             font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        .book-info {
-            padding: 1rem;
+        .image-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
         }
 
-        .book-isbn {
-            font-size: 0.75rem;
+        .thumbnail {
+            aspect-ratio: 1;
+            background: #f5f5f5;
+            border: 2px solid #ddd;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: #E84A2B;
+            background: #fff5f0;
+        }
+
+        /* Product info */
+        .product-info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .product-header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .product-isbn {
+            font-size: 0.85rem;
             color: #999;
             margin-bottom: 0.5rem;
         }
 
-        .book-title {
-            font-size: 0.95rem;
+        .product-title {
+            font-size: 1.5rem;
+            font-family: 'Noto Serif TC', serif;
             font-weight: 600;
-            margin-bottom: 0.75rem;
-            line-height: 1.3;
-            min-height: 2.6rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
         }
 
-        .book-price {
+        .product-price {
             display: flex;
             align-items: baseline;
-            gap: 0.5rem;
+            gap: 1rem;
             margin-bottom: 1rem;
         }
 
-        .book-price-current {
-            font-size: 1.25rem;
+        .price-current {
+            font-size: 2rem;
             font-weight: 700;
             color: #E84A2B;
         }
 
-        .book-price-original {
-            font-size: 0.85rem;
+        .price-original {
+            font-size: 1rem;
             color: #999;
             text-decoration: line-through;
         }
 
-        .book-actions {
+        .product-share {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .share-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            background: #E84A2B;
+            color: white;
+            border-color: #E84A2B;
+        }
+
+        /* Specs table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .specs-table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .specs-table td {
+            padding: 0.75rem 0;
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: #666;
+            width: 30%;
+        }
+
+        .specs-table td:last-child {
+            color: #333;
+        }
+
+        /* Purchase section */
+        .purchase-section {
+            border: 2px dashed #E84A2B;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            background: #fff5f0;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .quantity-selector label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .quantity-selector select {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.3rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .purchase-buttons {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 0.5rem;
+            gap: 1rem;
         }
 
         .btn {
-            padding: 0.5rem;
+            padding: 0.8rem;
             border: none;
-            border-radius: 0.5rem;
-            font-size: 0.8rem;
+            border-radius: 0.4rem;
+            font-size: 0.95rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
         }
 
         .btn-primary {
@@ -373,60 +426,154 @@
         }
 
         .btn-secondary {
-            background: #f5f5f5;
-            color: #666;
-            border: 1px solid #ddd;
+            background: white;
+            color: #E84A2B;
+            border: 2px solid #E84A2B;
         }
 
         .btn-secondary:hover {
-            background: #fff;
-            border-color: #E84A2B;
-            color: #E84A2B;
+            background: #fff5f0;
         }
 
-        /* News Section */
-        .news-list {
-            max-width: 800px;
-            margin: 2rem auto;
+        /* Tabs */
+        .tabs-container {
+            margin-top: 2rem;
+            border-top: 2px solid #eee;
+            padding-top: 2rem;
         }
 
-        .news-item {
+        .tabs-header {
             display: flex;
-            gap: 1rem;
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
+            gap: 0;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 2rem;
+        }
+
+        .tab-btn {
+            padding: 1rem 1.5rem;
+            background: none;
+            border: none;
             cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .news-item:hover {
-            background: #f9f9f9;
-        }
-
-        .news-date {
-            font-size: 0.8rem;
-            color: #999;
-            min-width: 80px;
+            font-size: 0.95rem;
             font-weight: 600;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+            bottom: -2px;
         }
 
-        .news-tag {
-            display: inline-block;
-            background: #FFF3F0;
+        .tab-btn:hover {
             color: #E84A2B;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            min-width: 80px;
-            text-align: center;
-            margin-right: 0.5rem;
         }
 
-        .news-title {
-            flex: 1;
+        .tab-btn.active {
+            color: #E84A2B;
+            border-bottom-color: #E84A2B;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
             color: #333;
+        }
+
+        .tab-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .tab-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tab-content li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        /* Audio player */
+        .audio-player {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .audio-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .audio-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .play-btn {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #E84A2B;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .play-btn:hover {
+            background: #d63d1f;
+        }
+
+        .audio-info {
+            flex: 1;
+        }
+
+        .audio-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+
+        .audio-duration {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Navigation */
+        .product-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+
+        .nav-link {
             text-decoration: none;
+            color: #E84A2B;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #d63d1f;
         }
 
         /* Footer */
@@ -438,6 +585,9 @@
         }
 
         .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
@@ -473,32 +623,43 @@
             text-align: center;
             font-size: 0.8rem;
             color: #666;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         /* Responsive */
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+
+            .purchase-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
+            }
+
+            .menu-toggle {
+                display: block;
             }
 
             .search-box {
                 width: 150px;
             }
 
-            .hero {
-                height: 300px;
+            .tabs-header {
+                flex-wrap: wrap;
             }
 
-            .hero h1 {
-                font-size: 1.75rem;
-            }
-
-            .books-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-
-            .category-grid {
-                grid-template-columns: repeat(3, 1fr);
+            .tab-btn {
+                padding: 0.75rem 1rem;
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -506,324 +667,357 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="header-top">
-                <a href="#" class="logo">
-                    <span class="logo-icon">📚</span>
-                    堂奧圖書
-                </a>
-                <ul class="nav-menu">
-                    <li><a href="#books">所有書籍</a></li>
-                    <li><a href="#category">分類</a></li>
-                    <li><a href="#news">最新消息</a></li>
-                    <li><a href="#about">關於我們</a></li>
-                </ul>
-                <div class="header-actions">
-                    <div class="search-box">
-                        <input type="text" placeholder="搜尋書名...">
-                        <button>🔍</button>
-                    </div>
-                    <div class="cart-icon">
-                        🛒
-                        <span class="cart-badge">0</span>
-                    </div>
+        <div class="header-top">
+            <a href="#" class="logo">
+                <span class="logo-icon">📚</span>
+                堂奧圖書
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#all-books">所有書籍</a></li>
+                <li><a href="#category">分類</a></li>
+                <li><a href="#news">最新消息</a></li>
+                <li><a href="#about">關於我們</a></li>
+            </ul>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="search...">
+                    <button>🔍</button>
                 </div>
+                <a href="#" class="cart-icon">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </a>
+                <button class="menu-toggle">☰</button>
             </div>
         </div>
         <div class="nav-secondary">
-            <div class="container">
+            <div class="nav-secondary-content">
                 <a href="#">會員專區</a>
                 <a href="#">資源下載</a>
+                <a href="#">最新消息</a>
+                <a href="#">限時特價</a>
                 <a href="#">文章專欄</a>
                 <a href="#">常見問題</a>
+                <a href="#">關於堂奧</a>
                 <a href="#">聯絡我們</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p style="font-size: 0.9rem; opacity: 0.9;">英語口說教材</p>
-                <h1>Let's Speak! 會聽會說超 easy</h1>
-                <p>一套三冊式的英語口說教材，專為以英語為外語的國小學生設計。透過有趣的活動與有結構的對話練習，提升學生的語言學習效果。</p>
-                <button class="hero-btn">立即前往 →</button>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="#">首頁</a> > <a href="#">所有書籍</a> > <a href="#">檢定考試類</a> > <a href="#">劍橋兒童英檢 YLE</a> > <a href="#">Cambridge YLE</a> > Cambridge Young Learners English Tests:Starters(Qrcode版)_TA0045 YLE
+    </div>
+
+    <!-- Main content -->
+    <div class="main-container">
+        <!-- Product images -->
+        <div class="product-image-section">
+            <div class="product-main-image">
+                <div class="mp3-badge">🎵 MP3</div>
+                📖
+            </div>
+            <div class="image-thumbnails">
+                <div class="thumbnail active">1</div>
+                <div class="thumbnail">2</div>
+                <div class="thumbnail">3</div>
+                <div class="thumbnail">4</div>
+                <div class="thumbnail">5</div>
+                <div class="thumbnail">6</div>
+                <div class="thumbnail">7</div>
+                <div class="thumbnail">8</div>
+                <div class="thumbnail">9</div>
+                <div class="thumbnail">10</div>
             </div>
         </div>
-    </section>
 
-    <!-- Category Section -->
-    <section id="category">
-        <div class="container">
-            <div class="section-label">CATEGORY</div>
-            <h2>按分類找書籍</h2>
-            <div class="category-grid">
-                <div class="category-card">
-                    <div class="category-icon">🍎</div>
-                    <p>啟蒙 Age 0-6</p>
+        <!-- Product info -->
+        <div class="product-info-section">
+            <div class="product-header">
+                <div class="product-isbn">9789860619270</div>
+                <div class="product-title">Cambridge Young Learners English Tests:Starters(Qrcode版)_TA0045 YLE</div>
+                <div class="product-price">
+                    <span class="price-current">$ 320</span>
+                    <span class="price-original">$ 400</span>
                 </div>
-                <div class="category-card">
-                    <div class="category-icon">📚</div>
-                    <p>國小 Age 7-12</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🎓</div>
-                    <p>國高中 Age 13-18</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">📝</div>
-                    <p>檢定考試類</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">📖</div>
-                    <p>Reading Box讀本</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🌟</div>
-                    <p>橋樑書/繪讀本</p>
+                <div class="product-share">
+                    <span class="share-label">share</span>
+                    <a href="#" class="share-btn">f</a>
+                    <a href="#" class="share-btn">L</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Bestsellers -->
-    <section id="books">
-        <div class="container">
-            <div class="section-label">BEST ITEMS</div>
-            <h2>暢銷專區</h2>
-            <div class="books-grid">
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=400&fit=crop" alt="A++ 文法通 3">
-                        <span class="book-badge">暢銷</span>
-                    </div>
-                    <div class="book-info">
-                        <div class="book-isbn">9789869627146</div>
-                        <div class="book-title">A++ 文法通 3</div>
-                        <div class="book-price">
-                            <span class="book-price-current">$ 152</span>
-                            <span class="book-price-original">$ 190</span>
-                        </div>
-                        <div class="book-actions">
-                            <button class="btn btn-primary">加入購物車</button>
-                            <button class="btn btn-secondary">了解更多</button>
-                        </div>
-                    </div>
+            <!-- Specs table -->
+            <table class="specs-table">
+                <tr>
+                    <td>ISBN</td>
+                    <td>9789860619270</td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td>written by Sue E. Leeward</td>
+                </tr>
+                <tr>
+                    <td>出版</td>
+                    <td>Skyline Research Team</td>
+                </tr>
+                <tr>
+                    <td>頁數</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>尺寸</td>
+                    <td>210mm x 297mm</td>
+                </tr>
+                <tr>
+                    <td>規格</td>
+                    <td>彩色/平裝</td>
+                </tr>
+                <tr>
+                    <td>書系</td>
+                    <td>YLE Exams</td>
+                </tr>
+                <tr>
+                    <td>級數</td>
+                    <td>Starters/A1</td>
+                </tr>
+                <tr>
+                    <td>應用程度</td>
+                    <td>國小</td>
+                </tr>
+                <tr>
+                    <td>出版日期</td>
+                    <td>2021年03月</td>
+                </tr>
+            </table>
+
+            <!-- Purchase section -->
+            <div class="purchase-section">
+                <div class="quantity-selector">
+                    <label for="quantity">數量</label>
+                    <select id="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=300&h=400&fit=crop" alt="新全民英檢黃金考題">
-                        <span class="book-badge">暢銷</span>
-                    </div>
-                    <div class="book-info">
-                        <div class="book-isbn">9789869888967</div>
-                        <div class="book-title">新全民英檢黃金考題：初級閱讀測驗</div>
-                        <div class="book-price">
-                            <span class="book-price-current">$ 280</span>
-                            <span class="book-price-original">$ 350</span>
-                        </div>
-                        <div class="book-actions">
-                            <button class="btn btn-primary">加入購物車</button>
-                            <button class="btn btn-secondary">了解更多</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=300&h=400&fit=crop" alt="A++ 英語會考高分攻略">
-                        <span class="book-badge">暢銷</span>
-                    </div>
-                    <div class="book-info">
-                        <div class="book-isbn">9786269846702</div>
-                        <div class="book-title">A++ 英語會考高分攻略</div>
-                        <div class="book-price">
-                            <span class="book-price-current">$ 224</span>
-                            <span class="book-price-original">$ 280</span>
-                        </div>
-                        <div class="book-actions">
-                            <button class="btn btn-primary">加入購物車</button>
-                            <button class="btn btn-secondary">了解更多</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=300&h=400&fit=crop" alt="Let's Speak! 3 with Activity Book">
-                        <span class="book-badge">新書</span>
-                    </div>
-                    <div class="book-info">
-                        <div class="book-isbn">9786269954315</div>
-                        <div class="book-title">Let's Speak! 3 with Activity Book</div>
-                        <div class="book-price">
-                            <span class="book-price-current">$ 288</span>
-                            <span class="book-price-original">$ 360</span>
-                        </div>
-                        <div class="book-actions">
-                            <button class="btn btn-primary">加入購物車</button>
-                            <button class="btn btn-secondary">了解更多</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=300&h=400&fit=crop" alt="Dragon Masters 兒童英語橋樑書">
-                        <span class="book-badge">暢銷</span>
-                    </div>
-                    <div class="book-info">
-                        <div class="book-isbn">9786269627140</div>
-                        <div class="book-title">Dragon Masters 兒童英語橋樑書 Vol.1</div>
-                        <div class="book-price">
-                            <span class="book-price-current">$ 192</span>
-                            <span class="book-price-original">$ 240</span>
-                        </div>
-                        <div class="book-actions">
-                            <button class="btn btn-primary">加入購物車</button>
-                            <button class="btn btn-secondary">了解更多</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-cover">
-                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=300&h=400&fit=crop" alt="Reading Comprehension 3 CD">
-                        <span class="book-badge">特價</span>
-                    </div>
-                    <div class="book-info">
-                        <div class="book-isbn">MK9010009023</div>
-                        <div class="book-title">Reading Comprehension 3 CD</div>
-                        <div class="book-price">
-                            <span class="book-price-current">$ 100</span>
-                            <span class="book-price-original">$ 150</span>
-                        </div>
-                        <div class="book-actions">
-                            <button class="btn btn-primary">加入購物車</button>
-                            <button class="btn btn-secondary">了解更多</button>
-                        </div>
-                    </div>
+                <div class="purchase-buttons">
+                    <button class="btn btn-primary">🛒 加入購物車</button>
+                    <button class="btn btn-secondary">♥ 收藏商品</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- News Section -->
-    <section id="news" style="background: #f9f9f9;">
-        <div class="container">
-            <div class="section-label">LATEST NEWS</div>
-            <h2>最新消息</h2>
-            <div class="news-list">
-                <div class="news-item">
-                    <span class="news-date">2025.09.01</span>
-                    <span class="news-tag">勵誠公告</span>
-                    <span class="news-title">新全民英檢保證班：初級閱讀測驗</span>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2025.06.04</span>
-                    <span class="news-tag">勵誠公告</span>
-                    <span class="news-title">My First Reading 101 封面 QR Code 更正</span>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2025.04.15</span>
-                    <span class="news-tag">新書上市</span>
-                    <span class="news-title">Let's Speak! with Activity Book 全新上市</span>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2025.03.20</span>
-                    <span class="news-tag">新書上市</span>
-                    <span class="news-title">Dragon Masters 橋樑書系列第二冊正式發售</span>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2025.02.10</span>
-                    <span class="news-tag">活動公告</span>
-                    <span class="news-title">2025 春季書展優惠活動開跑，全館 8 折起</span>
+    <!-- Tabs section -->
+    <div class="main-container" style="margin-top: 0; padding-top: 0;">
+        <div class="tabs-container" style="grid-column: 1 / -1;">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="switchTab(event, 'details')">詳細說明</button>
+                <button class="tab-btn" onclick="switchTab(event, 'download')">文件檔下載</button>
+                <button class="tab-btn" onclick="switchTab(event, 'audio')">線上音檔</button>
+                <button class="tab-btn" onclick="switchTab(event, 'audio-download')">音檔下載</button>
+            </div>
+
+            <!-- Details tab -->
+            <div id="details" class="tab-content active">
+                <h3>教材說明</h3>
+                <p>Cambridge Young Learners English Tests系列包含三個測驗級數：Starters, Movers, Flyers。每冊提供四回完整的模擬試題，適合準備劍橋兒童英檢的學習者。</p>
+                
+                <h3>試題本</h3>
+                <p>試題本：四回測驗（每回含 Listening, Reading &Writing, Speaking Test）</p>
+                <p>能力&口說MP3上線</p>
+                
+                <h3>解答本</h3>
+                <p>解答本：QR Code 下載/搜尋、詳細內容、口說測驗試題、級數測驗字彙範圍。</p>
+                
+                <h3>系列特點</h3>
+                <ul>
+                    <li>完全仿真題型，實戰模擬試題</li>
+                    <li>提供英式音聲，模擬原考場情境</li>
+                    <li>完整的下載答案、詳音、口說測驗試題、級數測驗字彙範圍。</li>
+                </ul>
+            </div>
+
+            <!-- Download tab -->
+            <div id="download" class="tab-content">
+                <h3>文件檔下載</h3>
+                <p>本產品提供以下文件檔供下載：</p>
+                <ul>
+                    <li><a href="#" style="color: #E84A2B;">解答本 PDF</a></li>
+                    <li><a href="#" style="color: #E84A2B;">詳細內容 PDF</a></li>
+                    <li><a href="#" style="color: #E84A2B;">試題內容 PDF</a></li>
+                </ul>
+            </div>
+
+            <!-- Audio tab -->
+            <div id="audio" class="tab-content">
+                <h3>線上音檔</h3>
+                <p>以下為本產品的線上音檔，可直接在線上聆聽：</p>
+                <div class="audio-player">
+                    <div class="audio-item">
+                        <button class="play-btn">▶</button>
+                        <div class="audio-info">
+                            <div class="audio-title">Test 1 - Listening Part 1</div>
+                            <div class="audio-duration">3:45</div>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <button class="play-btn">▶</button>
+                        <div class="audio-info">
+                            <div class="audio-title">Test 1 - Listening Part 2</div>
+                            <div class="audio-duration">4:20</div>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <button class="play-btn">▶</button>
+                        <div class="audio-info">
+                            <div class="audio-title">Test 2 - Listening Part 1</div>
+                            <div class="audio-duration">3:50</div>
+                        </div>
+                    </div>
+                    <div class="audio-item">
+                        <button class="play-btn">▶</button>
+                        <div class="audio-info">
+                            <div class="audio-title">Test 2 - Listening Part 2</div>
+                            <div class="audio-duration">4:15</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Audio download tab -->
+            <div id="audio-download" class="tab-content">
+                <h3>音檔下載</h3>
+                <p>可供下載的音檔列表：</p>
+                <ul>
+                    <li><a href="#" style="color: #E84A2B;">Test 1 - Listening (MP3)</a></li>
+                    <li><a href="#" style="color: #E84A2B;">Test 2 - Listening (MP3)</a></li>
+                    <li><a href="#" style="color: #E84A2B;">Test 3 - Listening (MP3)</a></li>
+                    <li><a href="#" style="color: #E84A2B;">Test 4 - Listening (MP3)</a></li>
+                    <li><a href="#" style="color: #E84A2B;">所有音檔 (ZIP)</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
+
+        <!-- Navigation -->
+        <div class="product-nav" style="grid-column: 1 / -1;">
+            <a href="#" class="nav-link">← PREV</a>
+            <a href="#" class="nav-link">返回列表頁</a>
+            <a href="#" class="nav-link">NEXT →</a>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer id="about">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>📚 堂奧圖書</h3>
-                    <p style="font-size: 0.85rem; color: #999; margin-bottom: 1rem;">堂奧圖書股份有限公司</p>
-                    <p style="font-size: 0.8rem; color: #666;">
-                        📍 台中市西屯區環中路二段876號2樓<br>
-                        📞 04-27083767<br>
-                        📠 04-24522345<br>
-                        🕐 週一至週五 09:00~18:00
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h3>關於堂奧</h3>
-                    <ul>
-                        <li><a href="#">關於堂奧</a></li>
-                        <li><a href="#">購物流程</a></li>
-                        <li><a href="#">購物須知</a></li>
-                        <li><a href="#">付款方式</a></li>
-                        <li><a href="#">聯絡我們</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>所有書籍</h3>
-                    <ul>
-                        <li><a href="#">啟蒙 Age 0-6</a></li>
-                        <li><a href="#">國小 Age 7-12</a></li>
-                        <li><a href="#">國高中 Age 13-18</a></li>
-                        <li><a href="#">檢定考試類</a></li>
-                        <li><a href="#">Reading Box讀本</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>其他資訊</h3>
-                    <ul>
-                        <li><a href="#">資源下載</a></li>
-                        <li><a href="#">最新消息</a></li>
-                        <li><a href="#">文章專欄</a></li>
-                        <li><a href="#">常見問題</a></li>
-                        <li><a href="#">會員條款</a></li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>📚 堂奧圖書</h3>
+                <p style="font-size: 0.85rem; color: #999; margin-bottom: 1rem;">堂奧圖書股份有限公司</p>
+                <p style="font-size: 0.8rem; color: #666;">
+                    統編：12719935<br>
+                    TEL：04-27083767<br>
+                    FAX：04-24522345<br>
+                    台中市西屯區環中路二段876號2樓<br>
+                    (週一至週五 09:00~18:00)
+                </p>
             </div>
-            <div class="footer-bottom">
-                <p>© 2025 Tang-Ao Book Co., Ltd. 堂奧圖書股份有限公司 | 統編：12719935</p>
+            <div class="footer-section">
+                <h3>關於堂奧圖書</h3>
+                <ul>
+                    <li><a href="#">關於堂奧</a></li>
+                    <li><a href="#">購物流程</a></li>
+                    <li><a href="#">購物須知</a></li>
+                    <li><a href="#">付款方式</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
             </div>
+            <div class="footer-section">
+                <h3>所有書籍</h3>
+                <ul>
+                    <li><a href="#">啟蒙 Age 0-6</a></li>
+                    <li><a href="#">國小 Age 7-12</a></li>
+                    <li><a href="#">國高中 Age 13-18</a></li>
+                    <li><a href="#">檢定考試類</a></li>
+                    <li><a href="#">Reading Box讀本</a></li>
+                    <li><a href="#">橋樑書/繪讀本</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>會員專區</h3>
+                <ul>
+                    <li><a href="#">我的帳戶</a></li>
+                    <li><a href="#">最愛清單</a></li>
+                    <li><a href="#">歷史訂單</a></li>
+                    <li><a href="#">我的優惠券</a></li>
+                    <li><a href="#">資源下載</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>其他資訊</h3>
+                <ul>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">文章專欄</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">會員條款</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Tang-Ao Book Co., Ltd. | WEBDESIGN</p>
         </div>
     </footer>
 
     <script>
-        // 簡單的互動功能
-        document.querySelectorAll('.btn-primary').forEach(btn => {
-            btn.addEventListener('click', function() {
-                alert('已加入購物車！');
+        // Tab switching
+        function switchTab(event, tabName) {
+            event.preventDefault();
+            
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Thumbnail click
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
             });
         });
 
-        document.querySelectorAll('.btn-secondary').forEach(btn => {
-            btn.addEventListener('click', function() {
-                alert('商品詳情頁即將上線！');
-            });
+        // Purchase button
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+            alert('已加入購物車！');
         });
 
-        document.querySelectorAll('.category-card').forEach(card => {
-            card.addEventListener('click', function() {
-                alert('分類頁面即將上線！');
-            });
+        // Favorite button
+        document.querySelector('.btn-secondary').addEventListener('click', function() {
+            this.style.background = this.style.background === 'rgb(232, 74, 43)' ? 'white' : '#E84A2B';
+            this.style.color = this.style.color === 'white' ? '#E84A2B' : 'white';
         });
 
-        document.querySelectorAll('.news-item').forEach(item => {
-            item.addEventListener('click', function() {
-                alert('文章詳情頁即將上線！');
+        // Audio player
+        document.querySelectorAll('.play-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('音檔播放功能 - 請上傳您的音檔 URL');
             });
-        });
-
-        document.querySelector('.hero-btn').addEventListener('click', function() {
-            alert('商品詳情頁即將上線！');
         });
     </script>
 </body>
