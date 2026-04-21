@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>劍橋兒童英檢 YLE | 堂奧圖書</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+      background: #ffffff;
+      color: #333333;
+      line-height: 1.7;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── Header (與 index.html 保持一致) ── */
+    header {
+      position: sticky; top: 0; z-index: 100; background: #ffffff;
+      border-bottom: 1px solid #e8e8e8; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; height: 70px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon {
+      width: 48px; height: 48px; background: linear-gradient(135deg, #e8a020, #f5c842);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 900; color: #fff;
+    }
+    .logo-text { font-size: 20px; font-weight: 700; color: #1a1a1a; }
+    .logo-sub  { font-size: 11px; color: #888; letter-spacing: 1px; }
+    nav { display: flex; gap: 4px; }
+    nav a {
+      padding: 8px 16px; border-radius: 6px; font-size: 14px;
+      font-weight: 500; color: #444; transition: all 0.2s;
+    }
+    nav a:hover, nav a.active { background: #fff5e6; color: #e8820a; }
+    .nav-contact {
+      background: #e8820a !important; color: #fff !important;
+      border-radius: 20px !important; padding: 8px 20px !important;
+    }
+
+    /* ── YLE Hero ── */
+    .yle-hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/yle_classroom.jpg');
+      background-size: cover; background-position: center;
+      padding: 100px 24px; text-align: center; color: #fff;
+    }
+    .yle-hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+    .yle-hero p { font-size: 18px; max-width: 700px; margin: 0 auto; opacity: 0.9; }
+
+    /* ── Main Content ── */
+    main { max-width: 1100px; margin: 0 auto; padding: 64px 24px; }
+
+    .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 80px; }
+    .intro-text h2 { font-size: 28px; color: #1a1a1a; margin-bottom: 20px; border-left: 5px solid #e8820a; padding-left: 15px; }
+    .intro-text p { font-size: 16px; color: #555; margin-bottom: 20px; }
+    .intro-img img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+    /* ── Levels Section ── */
+    .levels-title { text-align: center; margin-bottom: 48px; }
+    .levels-title h2 { font-size: 32px; color: #1a1a1a; }
+    .levels-title p { color: #888; margin-top: 8px; }
+
+    .level-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
+    .level-card {
+      background: #fff; border: 1px solid #eee; border-radius: 15px; padding: 40px 30px;
+      text-align: center; transition: all 0.3s;
+    }
+    .level-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-color: #e8820a; }
+    .level-icon { width: 80px; height: 80px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 32px; font-weight: 700; color: #fff; }
+    .starters { background: #4caf50; }
+    .movers { background: #2196f3; }
+    .flyers { background: #f44336; }
+    .level-card h3 { font-size: 24px; margin-bottom: 15px; }
+    .level-card p { font-size: 14px; color: #666; margin-bottom: 20px; }
+    .level-tag { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; color: #fff; margin-bottom: 15px; }
+
+    /* ── Table Section ── */
+    .table-section { margin-top: 80px; background: #f9f9f9; padding: 48px; border-radius: 20px; }
+    .table-section h3 { font-size: 24px; margin-bottom: 24px; text-align: center; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; }
+    th, td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #eee; }
+    th { background: #e8820a; color: #fff; font-weight: 700; }
+    tr:last-child td { border-bottom: none; }
+
+    /* ── Footer ── */
+    footer { background: linear-gradient(135deg, #1a73e8, #1558b0); color: #fff; padding: 48px 24px 32px; margin-top: 80px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
+    .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); text-align: center; font-size: 12px; color: rgba(255,255,255,0.6); }
+
+    @media (max-width: 768px) {
+      .intro-grid, .level-cards { grid-template-columns: 1fr; }
+      .yle-hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">堂</div>
+      <div>
+        <div class="logo-text">堂奧圖書</div>
+        <div class="logo-sub">Tang Ao Publishing</div>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="index.html">書籍介紹</a>
+      <a href="yle.html" class="active">劍橋 YLE</a>
+      <a href="#">科學玩具</a>
+      <a href="#" class="nav-contact">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<section class="yle-hero">
+  <h1>劍橋兒童英語認證 (YLE)</h1>
+  <p>專為 6-12 歲學童設計的國際英語檢定，全面評估聽、說、讀、寫能力，為未來的英語學習之路奠定自信基礎。</p>
+</section>
+
+<main>
+  <div class="intro-grid">
+    <div class="intro-text">
+      <h2>為什麼選擇劍橋 YLE？</h2>
+      <p>劍橋兒童英語認證（Cambridge English: Young Learners, YLE）是一系列有趣、具啟發性的英語測試，旨在鼓勵學童學習並建立自信。</p>
+      <p>測試內容貼近日常生活，透過活潑的圖畫與情境，讓孩子在輕鬆的氛圍下展現學習成果。所有參加測試的學童都能獲得證書，正面肯定其努力。</p>
+    </div>
+    <div class="intro-img">
+      <img src="images/yle_books.jpg" alt="YLE 教材" />
+    </div>
+  </div>
+
+  <div class="levels-title">
+    <h2>三個階段，循序漸進</h2>
+    <p>根據學童的英語程度，分為以下三個級別：</p>
+  </div>
+
+  <div class="level-cards">
+    <div class="level-card">
+      <div class="level-icon starters">S</div>
+      <span class="level-tag starters">Pre A1</span>
+      <h3>Starters</h3>
+      <p>第一階段：適合剛開始學習英語的學童，建立對單字與簡單句型的基礎認知。</p>
+    </div>
+    <div class="level-card">
+      <div class="level-icon movers">M</div>
+      <span class="level-tag movers">A1</span>
+      <h3>Movers</h3>
+      <p>第二階段：學童能理解簡單的指令、參與基本對話，並具備初步的讀寫能力。</p>
+    </div>
+    <div class="level-card">
+      <div class="level-icon flyers">F</div>
+      <span class="level-tag flyers">A2</span>
+      <h3>Flyers</h3>
+      <p>第三階段：適合國小高年級學童，程度相當於全民英檢初級，能處理更複雜的語言情境。</p>
+    </div>
+  </div>
+
+  <div class="table-section">
+    <h3>YLE 與 CEFR 國際標準對照表</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>YLE 級別</th>
+          <th>CEFR 等級</th>
+          <th>建議學習時數</th>
+          <th>對應能力</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starters</td>
+          <td>Pre A1</td>
+          <td>約 100 小時</td>
+          <td>能聽懂簡單日常用語，認識基本單字。</td>
+        </tr>
+        <tr>
+          <td>Movers</td>
+          <td>A1</td>
+          <td>約 175 小時</td>
+          <td>能參與基本溝通，理解簡單文章與圖表。</td>
+        </tr>
+        <tr>
+          <td>Flyers</td>
+          <td>A2</td>
+          <td>約 250 小時</td>
+          <td>能處理日常社交對話，撰寫簡單短文。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="logo-icon">堂</div><p>致力於提供優質英語教材。</p></div>
+    <div class="footer-col"><h4>相關連結</h4><ul><li><a href="index.html">書籍介紹</a></li><li><a href="yle.html">劍橋 YLE</a></li></ul></div>
+    <div class="footer-col"><h4>聯絡我們</h4><ul><li><a href="#">客服信箱</a></li><li><a href="#">訂購專線</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">© 2024 堂奧圖書 Tang Ao Publishing.</div>
+</footer>
+
+</body>
+</html>
