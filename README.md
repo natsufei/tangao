@@ -465,26 +465,6 @@
       </div>
     </div>
   </section>
-
-  <hr class="section-divider" />
-
-  <!-- 6. 趣味學習DIY玩具 -->
-  <section class="book-section" id="sec-toy">
-    <div class="book-card reverse">
-      <div class="book-img-wrap">
-        <img src="images/middle_school.jpg" alt="趣味學習DIY玩具" />
-        <span class="book-img-badge">趣味學習</span>
-      </div>
-      <div class="book-info">
-        <span class="category-label">趣味學習 DIY 玩具</span>
-        <ul class="book-list">
-          <li>
-            <a href="#" class="book-title-link">KLUTZ 系列</a>
-            <p class="book-desc">暢銷全球，美國知名創意遊戲品牌，多國認證品質安心，親子時光歡開心。每套 KLUTZ 產品皆附詳細圖解說明書，讓孩子在動手做的過程中培養創造力與邏輯思維。</p>
-          </li>
-          <li>
-            <a href="#" class="book-title-link">4M 科學探索系列</a>
-            <p class="book-desc">火山為何會爆發？磁力是如何運作？船為何可以浮在水面上？就讓小小科學家們來一一探索吧！4M 系列透過動手實驗，讓孩子在玩樂中愛上科學。</p>
           </li>
         </ul>
       </div>
@@ -514,7 +494,6 @@
         <li><a href="#sec-junior">國中教材</a></li>
         <li><a href="#sec-exam">檢定考試</a></li>
         <li><a href="#sec-reader">讀本系列</a></li>
-        <li><a href="#sec-toy">趣味學習DIY玩具</a></li>
       </ul>
     </div>
     <div class="footer-col">
