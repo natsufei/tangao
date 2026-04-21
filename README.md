@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -671,36 +672,6 @@
             <a href="#" class="logo">
                 <span class="logo-icon">📚</span>
                 堂奧圖書
-            </a>
-            <ul class="nav-menu">
-                <li><a href="#all-books">所有書籍</a></li>
-                <li><a href="#category">分類</a></li>
-                <li><a href="#news">最新消息</a></li>
-                <li><a href="#about">關於我們</a></li>
-            </ul>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input type="text" placeholder="search...">
-                    <button>🔍</button>
-                </div>
-                <a href="#" class="cart-icon">
-                    🛒
-                    <span class="cart-badge">0</span>
-                </a>
-                <button class="menu-toggle">☰</button>
-            </div>
-        </div>
-        <div class="nav-secondary">
-            <div class="nav-secondary-content">
-                <a href="#">會員專區</a>
-                <a href="#">資源下載</a>
-                <a href="#">最新消息</a>
-                <a href="#">限時特價</a>
-                <a href="#">文章專欄</a>
-                <a href="#">常見問題</a>
-                <a href="#">關於堂奧</a>
-                <a href="#">聯絡我們</a>
-            </div>
         </div>
     </header>
 
@@ -716,18 +687,6 @@
             <div class="product-main-image">
                 <div class="mp3-badge">🎵 MP3</div>
                 📖
-            </div>
-            <div class="image-thumbnails">
-                <div class="thumbnail active">1</div>
-                <div class="thumbnail">2</div>
-                <div class="thumbnail">3</div>
-                <div class="thumbnail">4</div>
-                <div class="thumbnail">5</div>
-                <div class="thumbnail">6</div>
-                <div class="thumbnail">7</div>
-                <div class="thumbnail">8</div>
-                <div class="thumbnail">9</div>
-                <div class="thumbnail">10</div>
             </div>
         </div>
 
@@ -788,29 +747,6 @@
                 <tr>
                     <td>出版日期</td>
                     <td>2021年03月</td>
-                </tr>
-            </table>
-
-            <!-- Purchase section -->
-            <div class="purchase-section">
-                <div class="quantity-selector">
-                    <label for="quantity">數量</label>
-                    <select id="quantity">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
-                </div>
-                <div class="purchase-buttons">
-                    <button class="btn btn-primary">🛒 加入購物車</button>
-                    <button class="btn btn-secondary">♥ 收藏商品</button>
                 </div>
             </div>
         </div>
