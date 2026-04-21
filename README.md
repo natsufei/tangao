@@ -430,7 +430,6 @@
  <a href="#" class="book-title-link">劍橋兒童英檢 YLE</a>
             <p class="book-desc">Cambridge Young Learners English Tests系列包含三個測驗級數：Starters, Movers, Flyers。
 每冊提供四回完整的模擬測驗，適合準備應考Cambridge Young Learners English Tests的兒童使用。</p>
-          </li>
         </ul>
       </div>
     </div>
