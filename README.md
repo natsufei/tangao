@@ -465,11 +465,6 @@
       </div>
     </div>
   </section>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
 </main>
 
