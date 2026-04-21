@@ -427,6 +427,10 @@
             <a href="#" class="book-title-link">SMART 新式多益</a>
             <p class="book-desc">全系列為您精心規劃之 20 天讀書計畫，目標讓您在 20 天內輕鬆理解新式多益題型、常考主題字彙與應考策略，是準備多益考試的最佳夥伴。</p>
           </li>
+ <a href="#" class="book-title-link">劍橋兒童英檢 YLE</a>
+            <p class="book-desc">Cambridge Young Learners English Tests系列包含三個測驗級數：Starters, Movers, Flyers。
+每冊提供四回完整的模擬測驗，適合準備應考Cambridge Young Learners English Tests的兒童使用。</p>
+          </li>
         </ul>
       </div>
     </div>
