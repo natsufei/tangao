@@ -850,61 +850,6 @@
             <a href="#" class="nav-link">NEXT →</a>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>📚 堂奧圖書</h3>
-                <p style="font-size: 0.85rem; color: #999; margin-bottom: 1rem;">堂奧圖書股份有限公司</p>
-                <p style="font-size: 0.8rem; color: #666;">
-                    統編：12719935<br>
-                    TEL：04-27083767<br>
-                    FAX：04-24522345<br>
-                    台中市西屯區環中路二段876號2樓<br>
-                    (週一至週五 09:00~18:00)
-                </p>
-            </div>
-            <div class="footer-section">
-                <h3>關於堂奧圖書</h3>
-                <ul>
-                    <li><a href="#">關於堂奧</a></li>
-                    <li><a href="#">購物流程</a></li>
-                    <li><a href="#">購物須知</a></li>
-                    <li><a href="#">付款方式</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>所有書籍</h3>
-                <ul>
-                    <li><a href="#">啟蒙 Age 0-6</a></li>
-                    <li><a href="#">國小 Age 7-12</a></li>
-                    <li><a href="#">國高中 Age 13-18</a></li>
-                    <li><a href="#">檢定考試類</a></li>
-                    <li><a href="#">Reading Box讀本</a></li>
-                    <li><a href="#">橋樑書/繪讀本</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>會員專區</h3>
-                <ul>
-                    <li><a href="#">我的帳戶</a></li>
-                    <li><a href="#">最愛清單</a></li>
-                    <li><a href="#">歷史訂單</a></li>
-                    <li><a href="#">我的優惠券</a></li>
-                    <li><a href="#">資源下載</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>其他資訊</h3>
-                <ul>
-                    <li><a href="#">最新消息</a></li>
-                    <li><a href="#">文章專欄</a></li>
-                    <li><a href="#">常見問題</a></li>
-                    <li><a href="#">會員條款</a></li>
-                </ul>
-            </div>
         </div>
         <div class="footer-bottom">
             <p>© Tang-Ao Book Co., Ltd. | WEBDESIGN</p>
